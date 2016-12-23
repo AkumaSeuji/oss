@@ -14,7 +14,7 @@
         </TextBox>
         <Button x:Name="but1" Content="Количество элементов для генерации" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="222" Height="39" Click="but1_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="but_1_1" Content="Задание 1" HorizontalAlignment="Left" Margin="20,102,0,0" VerticalAlignment="Top" Width="117" Height="37" Grid.ColumnSpan="2" Click="but_1_1_Click"/>
-        <TextBox x:Name="tb_elem" HorizontalAlignment="Left" Height="23" Margin="10,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Grid.Column="1"/>
+        <TextBox x:Name="tb_elem" HorizontalAlignment="Left" Height="23" Margin="0,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Grid.Column="1"/>
         <Button x:Name="but_1_2" Grid.ColumnSpan="2" Content="Задание 2" HorizontalAlignment="Left" Margin="20,144,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="but_1_2_Click"/>
         <Button x:Name="but_1_3" Grid.ColumnSpan="2" Content="Задание 3" HorizontalAlignment="Left" Margin="20,188,0,0" VerticalAlignment="Top" Width="117" Height="38" Click="but_1_3_Click"/>
 
