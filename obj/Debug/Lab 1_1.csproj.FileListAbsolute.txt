@@ -1,0 +1,19 @@
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\bin\Debug\Lab 1_1.exe.config
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\bin\Debug\Lab 1_1.exe
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\bin\Debug\Lab 1_1.pdb
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.csprojResolveAssemblyReference.cache
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\MainWindow.baml
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\MainWindow.g.cs
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\App.g.cs
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1_MarkupCompile.cache
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.g.resources
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab_1_1.Properties.Resources.resources
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.csproj.GenerateResource.Cache
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.exe
+c:\users\fernandes\documents\visual studio 2012\Projects\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.pdb
+C:\Users\akuma\Desktop\Lab 1_1\Lab 1_1\Lab 1_1\bin\Debug\Lab 1_1.exe.config
+C:\Users\akuma\Desktop\Lab 1_1\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.exe
+C:\Users\akuma\Desktop\Lab 1_1\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.pdb
+C:\Users\akuma\Documents\Visual Studio 2015\Projects\Lab 1_1\Lab 1_1\Lab 1_1\bin\Debug\Lab 1_1.exe.config
+C:\Users\akuma\Documents\Visual Studio 2015\Projects\Lab 1_1\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.exe
+C:\Users\akuma\Documents\Visual Studio 2015\Projects\Lab 1_1\Lab 1_1\Lab 1_1\obj\Debug\Lab 1_1.pdb
