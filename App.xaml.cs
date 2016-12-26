@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Lab_1_1
+namespace Лабораторная_3_7_ветка_1
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml
