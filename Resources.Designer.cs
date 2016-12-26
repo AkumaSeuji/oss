@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Лабораторная_3_7_ветка_1.Properties
+namespace Лабораторная_3_7_ветка_2.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Лабораторная_3_7_ветка_1.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Лабораторная_3_7_ветка_1.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Лабораторная_3_7_ветка_2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
