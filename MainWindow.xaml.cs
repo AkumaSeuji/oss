@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Lab_1_1
+namespace Лабораторная_3_7_ветка_2
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -27,51 +27,37 @@ namespace Lab_1_1
         public bool array_created = false;
         public Int32[] array;
         public Random rand = new Random();
-        private void but1_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             tb1.Text = tb1.Text + "Генерация массива..." + Environment.NewLine;
-            int n;
-            if (tb_elem.Text == "")
+            Array.Resize(ref array, 10);
+            for (int i = 0; i < 10; i++)
             {
-                tb1.Text = tb1.Text + "Ошибка ввода корректного числа элемента" + Environment.NewLine;
-                return;
-            }
-            if (int.TryParse(tb_elem.Text, out n) == false)
-            {
-                tb1.Text = tb1.Text + "Ошибка ввода корректного числа элемента" + Environment.NewLine;
-                return;
-            }
-            n = int.Parse(tb_elem.Text);
-            Array.Resize(ref array, n);
-            for (int i = 0; i < n; i++)
-            {
-                array[i] = rand.Next(0, 2 * n);
+                array[i] = rand.Next(-10, 20);
             }
             array_created = true;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < 10; i++)
             {
                 tb1.Text = tb1.Text + "Элемент №" + i + ": " + array[i] + Environment.NewLine;
             }
             tb1.Text = tb1.Text + "Генерация массива завершена." + Environment.NewLine;
+
         }
 
-        private void but_1_1_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
             if (array_created == false)
             {
-                tb1.Text = tb1.Text + "Ошибка генерации массива" + Environment.NewLine;
+                tb1.Text = tb1.Text + "Ошибка генерация массива" + Environment.NewLine;
                 return;
             }
-            tb1.Text = tb1.Text + "Задание 1: " + Environment.NewLine + "Дан массив из n чисел. Сколько элементов массива больше своих «соседей»,­ т.е. предыдущег­о и последующе­го. Первый и последний элементы не рассматрив­ать." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
+            tb1.Text = tb1.Text + "Задание 6: " + Environment.NewLine + "Найти, сколько элементов массива из 10 чисел больше, чем четвертый элемент этого массива." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
             int counter = 0;
-            for (int i = 1; i < array.Length - 1; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] > array[i - 1])
+                if (array[i] > array[3])
                 {
-                    if (array[i] > array[i + 1])
-                    {
-                        counter++;
-                    }
+                    counter++;
                 }
             }
             tb1.Text = tb1.Text + "Выполнено... " + Environment.NewLine;
@@ -79,52 +65,51 @@ namespace Lab_1_1
 
         }
 
-        private void but_1_2_Click(object sender, RoutedEventArgs e)
+        private void button3_Click(object sender, RoutedEventArgs e)
         {
             if (array_created == false)
             {
-                tb1.Text = tb1.Text + "Ошибка генерации массива" + Environment.NewLine;
+                tb1.Text = tb1.Text + "Ошибка генерация массива" + Environment.NewLine;
                 return;
             }
-            tb1.Text = tb1.Text + "Задание 2: " + Environment.NewLine + "Для массива из n чисел найти номер первого элемента, большего 25." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
+            tb1.Text = tb1.Text + "Задание 7: " + Environment.NewLine + "Найти сумму элементов массива из 10 чисел, меньших, чем 21." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
             int counter = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] > 25)
+                if (array[i] < 21)
                 {
-                    counter = i;
-                    break;
+                    counter = counter + array[i];
                 }
             }
             tb1.Text = tb1.Text + "Выполнено... " + Environment.NewLine;
-            tb1.Text = tb1.Text + "Номер: " + counter + Environment.NewLine;
+            tb1.Text = tb1.Text + "Сумма: " + counter + Environment.NewLine;
+
         }
 
-        private void but_1_3_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
+            if (array_created == false)
             {
-                if (array_created == false)
-                {
-                    tb1.Text = tb1.Text + "Ошибка генерации массива" + Environment.NewLine;
-                    return;
-                }
-                if (array.Length < 2)
-                {
-                    tb1.Text = tb1.Text + "Ошибка массив содержит меньше, чем два элемента" + Environment.NewLine;
-                    return;
-                }
-                tb1.Text = tb1.Text + "Задание 3: " + Environment.NewLine + "В массиве из n чисел найти сумму элементов больших, чем   второй элемент этого массива." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
-                int counter = 0;
-                for (int i = 0; i < array.Length; i++)
-                {
-                    if (array[i] > array[1])
-                    {
-                        counter = counter + array[i];
-                    }
-                }
-                tb1.Text = tb1.Text + "Выполнено... " + Environment.NewLine;
-                tb1.Text = tb1.Text + "Сумма: " + counter + Environment.NewLine;
+                tb1.Text = tb1.Text + "Ошибка генерация массив" + Environment.NewLine;
+                return;
             }
+            if (array.Length < 2)
+            {
+                tb1.Text = tb1.Text + "Ошибка массив содержит меньше двух элементов" + Environment.NewLine;
+                return;
+            }
+            tb1.Text = tb1.Text + "Задание 3: " + Environment.NewLine + "В массиве из n чисел найти сумму элементов больших, чем   второй элемент этого массива." + Environment.NewLine + "Выполнение..." + Environment.NewLine;
+            int counter = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > array[1])
+                {
+                    counter = counter + array[i];
+                }
+            }
+            tb1.Text = tb1.Text + "Выполнено... " + Environment.NewLine;
+            tb1.Text = tb1.Text + "Сумма: " + counter + Environment.NewLine;
+
         }
     }
 }

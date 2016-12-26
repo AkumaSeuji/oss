@@ -1,6 +1,7 @@
-﻿<Application x:Class="Lab_1_1.App"
+﻿<Application x:Class="Лабораторная_3_7_ветка_2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Лабораторная_3_7_ветка_2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
