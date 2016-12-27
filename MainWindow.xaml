@@ -1,22 +1,47 @@
-﻿<Window x:Class="Lab_1_1.MainWindow"
+﻿<Window x:Class="Проектное_задание_трапеции.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Лабораторная 1. Герасимова Елизавета" Height="350" Width="525">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Проектное_задание_трапеции"
+        mc:Ignorable="d"
+        Title="Проектное задание." Height="350" Width="525">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="61*"/>
-            <ColumnDefinition Width="456*"/>
+            <ColumnDefinition Width="202*"/>
+            <ColumnDefinition Width="315*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tb1" HorizontalAlignment="Center" Height="299" Margin="186,10,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontFamily="Century Gothic" FontWeight="Bold" Background="White" OpacityMask="Black" IsReadOnly="True" Foreground="Black" BorderBrush="#FFEEEEEE" Grid.Column="1">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
-        <Button x:Name="but1" Content="Количество элементов для генерации" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="222" Height="39" Click="but1_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="but_1_1" Content="Задание 1" HorizontalAlignment="Left" Margin="20,102,0,0" VerticalAlignment="Top" Width="117" Height="37" Grid.ColumnSpan="2" Click="but_1_1_Click"/>
-        <TextBox x:Name="tb_elem" HorizontalAlignment="Left" Height="23" Margin="0,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Grid.Column="1"/>
-        <Button x:Name="but_1_2" Grid.ColumnSpan="2" Content="Задание 2" HorizontalAlignment="Left" Margin="20,144,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="but_1_2_Click"/>
-        <Button x:Name="but_1_3" Grid.ColumnSpan="2" Content="Задание 3" HorizontalAlignment="Left" Margin="20,188,0,0" VerticalAlignment="Top" Width="117" Height="38" Click="but_1_3_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="27" Margin="38,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="38,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" TextChanged="textBox2_TextChanged"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="27" Margin="38,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" TextChanged="textBox3_TextChanged"/>
+        <Label x:Name="label" Content="e=" HorizontalAlignment="Left" Height="27" Margin="10,22,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="label1" Content="a=" HorizontalAlignment="Left" Height="24" Margin="10,65,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="label2" Content="b=" HorizontalAlignment="Left" Height="25" Margin="10,106,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.709"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3" Content="n=" HorizontalAlignment="Left" Height="27" Margin="10,151,0,0" VerticalAlignment="Top" Width="39"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="24" Margin="38,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" TextChanged="textBox1_TextChanged"/>
+        <RadioButton x:Name="rb1" Content="y=sin(x)" HorizontalAlignment="Left" Height="27" Margin="123,28,0,0" VerticalAlignment="Top" Width="91" Checked="rb1_Checked" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="rb2" Content="y=cos(x)" HorizontalAlignment="Left" Height="24" Margin="123,71,0,0" VerticalAlignment="Top" Width="91" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="rb3" Content="y=x^2" HorizontalAlignment="Left" Height="27" Margin="123,102,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.756,0.612" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="rb4" Content="y=ln(x)" HorizontalAlignment="Left" Height="27" Margin="123,151,0,0" VerticalAlignment="Top" Width="91" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Otvet" HorizontalAlignment="Left" Height="206" Margin="106,28,0,0" TextWrapping="Wrap" Text="Результат. Ввод эпсилон обязателен!" VerticalAlignment="Top" Width="166" TextChanged="Otvet_TextChanged" Grid.Column="1"/>
+        <Button x:Name="button" Content="Рассчет" HorizontalAlignment="Left" Height="36" Margin="10,251,0,0" VerticalAlignment="Top" Width="134" Click="button_Click"/>
+        <Menu Height="35" Margin="226,1,0,0" Name="menu1" VerticalAlignment="Top" Grid.Column="1">
+            <MenuItem Header="Информация" x:Name="information" Click="information_Click_1" Height="33" Width="91">
+                <MenuItem Header="Об авторе" x:Name="Author" Click="Author_Click"/>
+            </MenuItem>
 
+        </Menu>
+        <Button x:Name="button1" Content="Запомнить значения" HorizontalAlignment="Left" Height="34" Margin="10,200,0,0" VerticalAlignment="Top" Width="134" Click="button1_Click"/>
+        <Button x:Name="button3" Grid.ColumnSpan="2" Content="Чтение из файла" HorizontalAlignment="Left" Height="34" Margin="163,200,0,0" VerticalAlignment="Top" Width="128" Click="button3_Click"/>
+        <Button x:Name="button4" Grid.ColumnSpan="2" Content="Сохранить в файл" HorizontalAlignment="Left" Height="37" Margin="163,250,0,0" VerticalAlignment="Top" Width="128" Click="button4_Click"/>
     </Grid>
 </Window>

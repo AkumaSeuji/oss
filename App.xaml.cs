@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Lab_1_1
+namespace Проектное_задание_трапеции
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml
